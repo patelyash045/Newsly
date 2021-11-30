@@ -28,23 +28,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<News>, t: Throwable) {
-                Log.d("CODE", "Error inFetching News")
-            }
-        })
-        /*
-
-        val news = NewsService.newsInstance.getHeadline("in",1)
-        news.enqueue(object: Callback<News>{
-            override fun onResponse(call: Call<News>, response: Response<News>) {
-                Log.d("CODE","Error in Fetching News")
-            }
-
-            override fun onFailure(call: Call<News>, t: Throwable) {
-                val news : News? = re
-
+                Log.d("CODE", "Error inFetching News",t)
             }
         })
 
-        */
     }
 }
